@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #042a2b;
+    --secondary-color: #5eb1bf;
+    --text-color: #042a2b;
+    --background-color: #cdedf6;
+    --accent-color: #ef7b45;
+}
+
+/* general styling */
+body {
+    font-family: 'Kanit', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main h1,
+h2 {
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+/* remove underline from social media image links */
+footer a img {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* hero section styling */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3.7em;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+
+article {
+    bottom: 10%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: left;
+
+}
+
+article img {
+    float: right;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 1.2em;
+    margin: 0 15px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-color);
+    color: white;
+}
+
+section img {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+}
+
+h4 {
+    color: var(--accent-color);
+}
