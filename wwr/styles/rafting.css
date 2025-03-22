@@ -53,17 +53,9 @@ html {
     background-color: var(--background-color);
 }
 
-.herodiv h1 {
-    text-align: center;
-    background-color: var(--background-color);
-    font-family: "Kanit";
-    color: var(--text-color);
-    font-size: xx-large;
-}
-
 .herodiv {
-    margin: 10px auto;
     position: relative;
+    margin: 10px auto;
 }
 
 .herodiv img {
@@ -88,12 +80,18 @@ html {
 
 }
 
+.overlay h1 {
+    text-align: center;
+    background-color: var(--background-color);
+    font-family: "Kanit";
+    color: var(--text-color);
+    font-size: xx-large;
+}
 .overlay img {
-    float: right;
-    margin: 0 0 15px 15px;
-    border: 1px solid #000;
+    display: block;
     width: 200px;
     height: auto;
+    float: right;
 }
 
 .overlay p {
