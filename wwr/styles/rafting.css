@@ -49,7 +49,6 @@ nav a:hover {
     background: var(--accent-color);
 }
 
-/* background color for entire page */
 html {
     background-color: var(--background-color);
 }
