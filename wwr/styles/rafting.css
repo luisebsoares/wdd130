@@ -18,116 +18,234 @@
     font-style: normal;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--secondary-color);
-    padding: 10px 50px;
-}
-
-header img {
-    width: 150px;
-}
-
-nav {
-    display: flex;
-    gap: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-family: "Roboto Slab";
-    font-weight: bold;
-    padding: 10px 15px;
-    background: var(--background-color);
-    border-radius: 5px;
-}
-
-nav a:hover {
-    background: var(--accent-color);
-}
-
-html {
+body {
     background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-color);
+    max-width: 800%;
+}
+
+.logo img {
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+
+h1 {
+    color: var(--background-color);
+    font-size: 2.2rem;
+    font-family: "Kanit"
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    font-family: "Kanit";
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: var(--background-color);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navigation a:hover {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .herodiv {
     position: relative;
-    margin: 10px auto;
-}
-
-.herodiv img {
-    display: block;
-    width: 100%;
+    width: 140%;
     height: auto;
-    object-fit: cover;
+    background: url('images/rafting_hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
 }
 
 .overlay {
     position: absolute;
-    top: 50px;
-    right: 30px;
-    left: 30px;
-    bottom: 50px;
-    background: var(--background-color);
-    border: 1px solid #000;
-    padding: .5rem;
-    box-shadow: 0 0 10px #000;
-    opacity: 0.85;
-    margin: 1rem auto;
-
-}
-
-.overlay h1 {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
     text-align: center;
-    background-color: var(--background-color);
-    font-family: "Kanit";
-    color: var(--text-color);
-    font-size: xx-large;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.overlay img {
-    display: block;
+
+.overlay-title {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.overlay-content {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding-right: 70px;
+    padding-left: 70px;
+    border-radius: 10px;
+    max-width: 500px;
+    gap: 20px;
+
+}
+
+.overlay-content p {
+    text-align: left;
+    flex: 1;
+}
+
+.overlay-content img {
     width: 200px;
-    height: auto;
-    float: right;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.overlay p {
-    color: var(--text-color);
+.history {
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    background: rgba(94, 177, 191, 0.2);
+    border-radius: 10px;
+    padding: 30px;
 }
 
-h2 {
+.history h2 {
+    font-family: "Kanit";
+    font-size: 2rem;
     color: var(--primary-color);
+    margin-bottom: 5px;
 }
 
-p {
-    font-family: "Roboto Slab";
-    font-size: 1.2em;
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.history-content p {
+    font-size: 1.1rem;
     color: var(--text-color);
+    max-width: 600px;
 }
 
-/* remove underline from social media image links */
-footer a img {
-    text-decoration: none;
-    display: inline-block;
+.history-left {
+    text-align: right;
 }
 
+.history-right {
+    text-align: left;
+}
+
+.history-content img {
+    width: 150px;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.adventure {
+    text-align: center;
+    padding: 40px;
+    background: rgba(94, 177, 191, 0.2);
+    /* Light background for contrast */
+    border-radius: 10px;
+    margin: auto;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 5px;
+    padding: 10px;
+    max-width: 1400px;
+    margin: auto;
+    overflow-x: auto;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+    flex: 1;
+    min-width: 160px;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    max-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.adventure-gallery figcaption {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-top: 5px;
+}
+
+.herodiv,
+.history,
+.adventure {
+    margin: 30px auto;
+    padding: 40px 20px;
+    max-width: 1400px;
+}
+
+.history,
+.adventure {
+    border-radius: 10px;
+}
 
 footer {
     text-align: center;
     padding: 20px;
     background: var(--primary-color);
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
-section img {
-    display: block;
-    width: 400px;
-    margin: 10px auto;
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-h4 {
-    color: var(--accent-color);
+.footer-icons a img {
+    width: 40px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-icons a img:hover {
+    transform: scale(1.1);
 }
