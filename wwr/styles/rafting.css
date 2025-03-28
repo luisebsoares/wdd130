@@ -23,15 +23,39 @@ body {
 }
 
 header {
+    font-family: "Kanit";
     background-color: var(--primary-color);
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: space-around;
+    padding: 20px;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
-    border-bottom: 1px solid var(--primary-color);
-    max-width: 800%;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.logo {
+    width: 120px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
 }
 
 .logo img {
@@ -74,7 +98,7 @@ h1 {
 
 .herodiv {
     position: relative;
-    width: 140%;
+    width: 100%;
     height: auto;
     background: url('images/rafting_hero.jpg') center/cover no-repeat;
     display: flex;
@@ -98,6 +122,7 @@ h1 {
 }
 
 .overlay-title {
+    font-family: "Roboto Slab";
     font-size: 2rem;
     color: var(--text-color);
     font-weight: bold;
@@ -137,7 +162,7 @@ h1 {
 }
 
 .history h2 {
-    font-family: "Kanit";
+    font-family: "Roboto Slab";
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 5px;
@@ -225,24 +250,27 @@ h1 {
 }
 
 footer {
-    text-align: center;
+    background-color: var(--primary-color);
+    font-family: "Kanit";
     padding: 20px;
-    background: var(--primary-color);
     color: white;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 15px;
+    justify-content: space-between;
+}
+
+.footer-text {
+    flex-grow: 1;
+    text-align: center;
 }
 
 .footer-icons {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .footer-icons a img {
-    width: 40px;
+    width: 35px;
     transition: transform 0.2s ease-in-out;
 }
 
