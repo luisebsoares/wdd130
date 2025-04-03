@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafting Site About Us</title>
+    <meta name="description" content="About us Website for rifting Website">
+    <meta name="author" content="Luis Brasil">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="header-container">
+            <img src="images/logo1.png" alt="Up Down Rafting Logo" class="logo">
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Adventures</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="our-information">
+            <section class="contact-us">
+                <div class="contact-title">
+                    <h1>Contact Us</h1>
+                    <div class="our_info">
+                        <p>Up Down Rafting</p>
+                        <p>Phone: 801-123-4567</p>
+                        <p>Email: updownrafting@gmail.com</p>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58182.17530318306!2d-109.39983837552997!3d40.315004015716575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1743473855529!5m2!1sen!2sus"
+                        loading="lazy"></iframe>
+                </div>
+            </section>
+            <section class="employees">
+                <h2>Meet Our Staff!</h2>
+                <div class="employee-gallery">
+                    <figure>
+                        <img src="images/employee1.jpg" alt="Barbara" width="300">
+                        <figcaption>Barbara - Rafting Instructor</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee2.jpg" alt="John" width="300">
+                        <figcaption>John - Company Manager</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee3.jpg" alt="Joanna" width="300">
+                        <figcaption>Joanna - Masrketing Manager</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Purpose of Message</legend>
+                <div class="form-item column1">
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </div>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="4" required></textarea>
+                <div>
+                    <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly
+                        newsletter</label>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <h4>&copy; 2025 | Up Down Rafting | Luis Brasil</h4>
+        <div class="footer-icons">
+            <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

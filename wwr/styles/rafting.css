@@ -277,3 +277,155 @@ footer {
 .footer-icons a img:hover {
     transform: scale(1.1);
 }
+
+.employees {
+    text-align: center;
+    padding: 30px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.employees,
+h2 {
+    font-family: "Kanit";
+    font-size: 2rem;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    padding: 10px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.employee-gallery,
+img {
+    border-radius: 5px;
+}
+
+.employee,
+figcaption {
+    font-size: 1.5rem;
+    font-family: "Roboto Slab";
+}
+
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px var(--primary-color);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: "Kanit", sans-serif;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.form-item {
+    margin-bottom: 5px;
+}
+
+label {
+    font-size: 1rem;
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.contact-title,
+.our_info {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.contact-title h1 {
+    color: var(--text-color);
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.our_info p {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.map {
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+
+.map iframe {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 78px) {
+    .contact-us {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .map,
+    .contact-title {
+        max-width: 100%;
+    }
+}
