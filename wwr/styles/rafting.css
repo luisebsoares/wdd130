@@ -543,3 +543,18 @@ button {
     color: var(--text-color);
     font-size: 1.5rem;
 }
+
+.footer-wireframe-link {
+    font-family: "Kanit", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.footer-wireframe-link:hover {
+    color: var(--accent-color);
+    font-weight: 600;
+}
